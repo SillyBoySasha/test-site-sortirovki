@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Sortirovka</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo.jpg" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Подключите стили для иконок Font Awesome -->
+</head>
+<body>
+    <!--navbar-->
+    <header>
+        <h2 class="logo"><a href="../index.html" class="custom-link0">Sortirovka</a></h2>
+        <nav class="navigation">
+            <a href="#">Каталог</a>
+            <a href="../pages/contact.html">Контакты</a>
+        </nav>
+    </header>
+    <!-- Header-->
+<!--Left List -->
+<div class="category-filter">
+    <div>
+        <h3 class="category1">Категории</h3>
+        <ul class="category-list">
+            <li><label><input type="checkbox" value="category1"> Акссесуары</label></li>
+            <li><label><input type="checkbox" value="category2"> Верхняя одежда</label></li>
+            <li><label><input type="checkbox" value="category3"> Обувь</label></li>
+            <li><label><input type="checkbox" value="category4"> Футболки</label></li>
+            <li><label><input type="checkbox" value="category5"> Худи/Свитшоты</label></li>
+            <li><label><input type="checkbox" value="category6"> Штаны</label></li>
+        </ul>
+    </div>
+    <div>
+        <h3 class="category2">Размер</h3>
+        <ul class="category-list">
+            <li><label><input type="checkbox" value="category1"> Xs</label></li>
+            <li><label><input type="checkbox" value="category2"> S</label></li>
+            <li><label><input type="checkbox" value="category3"> M</label></li>
+            <li><label><input type="checkbox" value="category4"> L</label></li>
+            <li><label><input type="checkbox" value="category5"> XL</label></li>
+            <li><label><input type="checkbox" value="category6"> XXL</label></li>
+        </ul>
+    </div>
+    <div>
+        <h3 class="category3">Обувь</h3>
+        <ul class="category-list">
+            <li><label><input type="checkbox" value="category6"> 8 US / 40 EU</label></li>
+            <li><label><input type="checkbox" value="category6"> 8.5 US / 41 EU</label></li>
+            <li><label><input type="checkbox" value="category6"> 9 US / 42 EU</label></li>
+            <li><label><input type="checkbox" value="category6"> 10 US / 43 EU</label></li>
+            <li><label><input type="checkbox" value="category6"> 11 US / 44 EU</label></li>
+            <li><label><input type="checkbox" value="category6"> 11.5 US / 45 EU</label></li>
+            <li><label><input type="checkbox" value="category6"> 12 US / 46 EU</label></li>
+        </ul>
+    </div>
+</div>
+<!-- Форма поиска товара -->
+<div class="search-container">
+    <form action="/search" method="get">
+        <input type="text" placeholder="Поиск товара..." name="search">
+        <button type="submit"><i class="fas fa-search"></i></button> <!-- Иконка лупы для поиска -->
+    </form>
+</div>
+<!--Меню-->
+<div class="dropdown">
+    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+      Сортировка
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <li><a class="dropdown-item" href="#">Порядок: по умолчанию</a></li>
+      <li><a class="dropdown-item" href="#">Цена: по возрастанию</a></li>
+      <li><a class="dropdown-item" href="#">Цена: по убыванию</a></li>
+      <li><a class="dropdown-item" href="#">Название: А--Я</a></li>
+      <li><a class="dropdown-item" href="#">Название: Я--А</a></li>
+      <li><a class="dropdown-item" href="#">Порядок: сперва новые</a></li>
+      <li><a class="dropdown-item" href="#">Порядок: сперва старые</a></li>
+    </ul>
+  </div>
+    <!--tovar-->
+    <div class="product-list">
+    <div class="products-container">
+    <div class="product-card">
+        <div class="product-image">
+        <a href="../pages/clotch/1.html">
+            <img src="../img/clotch/1.jpg" alt="Product Image" class="default-image">
+            <img src="../img/clotch/2.jpg" alt="Product Image" class="hover-image">
+        </a>
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Salem Rebuild Zip-Sweater</h3>
+            <p class="product-price">5 500 ₽</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../img/clotch/3.jpg" alt="Product Image" class="default-image">
+            <img src="../img/clotch/4.jpg" alt="Product Image" class="hover-image">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Polar Big Boy Jeans</h3>
+            <p class="product-price">9 500 ₽</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../img/clotch/5.jpg" alt="Product Image" class="default-image">
+            <img src="../img/clotch/6.jpg" alt="Product Image" class="hover-image">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Jean Paul Gaultier Scarf</h3>
+            <p class="product-price">6 500 ₽</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../img/clotch/7.jpg" alt="Product Image" class="default-image">
+            <img src="../img/clotch/8.jpg" alt="Product Image" class="hover-image">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Vintage Hip-Hop Hoodie</h3>
+            <p class="product-price">4 400 ₽</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../img/clotch/9.jpg" alt="Product Image" class="default-image">
+            <img src="../img/clotch/10.jpg" alt="Product Image" class="hover-image">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Bleached Vintage Hoodie</h3>
+            <p class="product-price">4 300 ₽</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../img/clotch/11.jpg" alt="Product Image" class="default-image">
+            <img src="../img/clotch/12.jpg" alt="Product Image" class="hover-image">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Oxford University Rebuild Hoodie</h3>
+            <p class="product-price">5 500 ₽</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../img/clotch/13.jpg" alt="Product Image" class="default-image">
+            <img src="../img/clotch/14.jpg" alt="Product Image" class="hover-image">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Diesel washed jeans</h3>
+            <p class="product-price">5 500 ₽</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../img/clotch/15.jpg" alt="Product Image" class="default-image">
+            <img src="../img/clotch/16.jpg" alt="Product Image" class="hover-image">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Vintage Carhartt Active Jacket</h3>
+            <p class="product-price">16 900 ₽</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../img/clotch/17.jpg" alt="Product Image" class="default-image">
+            <img src="../img/clotch/18.jpg" alt="Product Image" class="hover-image">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">St. Pauli hat</h3>
+            <p class="product-price">1 800 ₽</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../img/clotch/19.jpg" alt="Product Image" class="default-image">
+            <img src="../img/clotch/20.jpg" alt="Product Image" class="hover-image">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Vintage Snap-On Nascar Jacket 90ss</h3>
+            <p class="product-price">8 200 ₽</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../img/clotch/21.jpg" alt="Product Image" class="default-image">
+            <img src="../img/clotch/22.jpg" alt="Product Image" class="hover-image">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Vintage Tee 00-ss</h3>
+            <p class="product-price">1 600 ₽</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../img/clotch/23.jpg" alt="Product Image" class="default-image">
+            <img src="../img/clotch/24.jpg" alt="Product Image" class="hover-image">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Vintage Jacket</h3>
+            <p class="product-price">7 300 ₽</p>
+        </div>
+    </div>
+    
+</div>
+</div>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer3-content">
+            <a href="../index.html" class="footer-link">Главная</a>
+            <a href="../pages/contact.html" class="footer-link">Контакты</a>
+            <a href="#" class="footer-link">Каталог</a>
+            <a href="../pages/info.html" class="footer-link">Информация</a>
+        </div>
+        <p class="footer-text">© 2023 Sortirovka<br> 
+            sortirovka@gmail.com</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
